@@ -4,6 +4,7 @@
     "ListName": "SharePoint.Example.List"
   },
   "Jira": {
+    "RequestUri": "Your-Request-Uri-For Jira",
     "ApiToken": "example.API-Token-to-your-project",
     "Username": "Username of Your Jira Service-User",
     "ProjectKey": "Your-Project-Key",
