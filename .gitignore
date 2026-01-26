@@ -4,6 +4,7 @@ config/config.json
 # Logs
 logs/
 *.log
+*.txt
 
 
 # Editor & OS
