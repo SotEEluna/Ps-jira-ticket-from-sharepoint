@@ -195,13 +195,6 @@ The log contains:
 
 ---
 
-## 🔒 Security Notes
-- Do **not** commit real API tokens
-- Consider using environment variables or a secret vault
-- Restrict access to `config.json`
-
----
-
 ## 📄 License
 See the `License` file.
 
