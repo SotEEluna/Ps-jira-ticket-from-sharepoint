@@ -1,5 +1,4 @@
 {
-  "Logfile": { "Path": "c:\\tmp\\" },
   "SharePoint": {
     "SiteURL": "https://sharepoint.example.com/sites/company",
     "ListName": "SharePoint.Example.List"
