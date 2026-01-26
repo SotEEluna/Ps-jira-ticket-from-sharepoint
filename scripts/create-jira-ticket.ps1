@@ -84,9 +84,8 @@ import-Module PnP.Powershell -RequiredVersion "1.11.0"
                     {
                         $enDate = (Get-Date $Date).ToString('yyyy-MM-dd')
 
-                        # Template klonen (je nach JSON Struktur)
+                        # Clone the template according to the JSON structure. For my setup, cloning is the appropriate solution.
                         $bodyObj = $config.Jira.BodyTemplate | ConvertTo-Json -Depth 50 | ConvertFrom-Json
-                        # oder: $bodyObj = $config.JiraBodyTemplate | ConvertTo-Json -Depth 50 | ConvertFrom-Json
 
                         $bodyObj.fields.project.key        = $config.Jira.ProjectKey
                         $bodyObj.fields.issuetype.name     = $config.Jira.IssueType
@@ -147,7 +146,7 @@ import-Module PnP.Powershell -RequiredVersion "1.11.0"
         }     
 
         Write-Host "Users for which a ticket has been generated:"
-        Write-Log -text "User für die ein Ticket erstellt wurde:"
+        Write-Log -text "Users for which a ticket has been generated:"
         foreach ($array in $arrayDataTrue) {
             Write-Host $array
             Write-Log -text $array
