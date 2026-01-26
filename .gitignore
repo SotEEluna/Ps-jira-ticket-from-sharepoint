@@ -1,0 +1,12 @@
+# echte Config mit Secrets
+config/config.json
+
+# Logs
+logs/
+*.log
+
+
+# Editor & OS
+.vscode/
+.DS_Store
+Thumbs.db
