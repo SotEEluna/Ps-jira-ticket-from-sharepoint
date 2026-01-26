@@ -1,1 +1,30 @@
+{
+  "Logfile": { "Path": "c:\\tmp\\" },
+  "SharePoint": {
+    "SiteURL": "https://sharepoint.example.com/sites/company",
+    "ListName": "SharePoint.Example.List"
+  },
+  "Jira": {
+    "ApiToken": "example.API-Token-to-your-project",
+    "Username": "Username of Your Jira Service-User",
+    "ProjectKey": "Your-Project-Key",
+    "IssueType": "Your-Issue-Type",
+    "DefaultSummary": "Your Ticket Summary",
+    "ComponentId": "12345",
+    "RequestType": "Your-RequestType",
+    "PriorityId": "3",
+    "BodyTemplate": {
+      "fields": {
+        "project": { "key": "" },
+        "issuetype": { "name": "" },
+        "summary": "",
+        "description": "",
+        "components": [ { "id": "" } ],
+        "labels": [],
+        "duedate": "",
+        "priority": { "id": "" }
+      }
+    }
+  }
+}
 
