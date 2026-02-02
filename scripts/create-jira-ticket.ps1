@@ -32,8 +32,15 @@ foreach ($path in $modulePaths) {
         }
 }
 
-
-
-
-
-
+try {
+    Import-Module PnP.Powershell -RequiredVersion "1.11.0" -Force -ErrorAction Stop | Out-Null
+    Write-Log "PnP.Powershell Module: imported" SUCCESS
+}
+catch {
+    Write-Log "PnP.Powershell Module: couldnt be imported." ERROR
+    Write-Log "$($_.Exception.Message)" ERROR
+    Write-Log "Exit Script." ERROR
+    Pause
+    exit
+    
+}
